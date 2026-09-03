@@ -14,6 +14,10 @@ public class interfacedClass implements interfacePro1, interfacePro2 {
 		System.out.println("Jungle is a Nature’s wild playground, dense, tangled, and full of life");
 	}
 	
+//	public void deciduousForest() {
+//		System.out.println("Deciduous Forest is a forest where trees shed their leaves during a particular season. ");
+//	}
+	
 	public static void main (String[]args) {
 		
 		interfacedClass ifc = new interfacedClass();
@@ -22,6 +26,7 @@ public class interfacedClass implements interfacePro1, interfacePro2 {
 		ifc.jungle();
 		ifc.tropicalRainforest();
 		ifc.mangroveForest();
+//		ifc.deciduousForest();
 		
 	}
 
