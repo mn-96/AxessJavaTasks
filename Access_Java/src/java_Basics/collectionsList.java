@@ -26,6 +26,7 @@ public class collectionsList {
 		System.out.println(arl.size());
 		arl.clear();
 		System.out.println(arl);
+		System.out.println(arl.size());
 		System.out.println(arl.isEmpty());
 		
 		System.out.println("Linked List");
@@ -45,8 +46,35 @@ public class collectionsList {
 		System.out.println(lkl.contains(2));
 		System.out.println(lkl.indexOf("MN"));
 		System.out.println(lkl.size());
-		lkl.clear();
+		lkl.addFirst("Good");
 		System.out.println(lkl);
+		lkl.addLast("Next");
+		System.out.println(lkl);
+		System.out.println(lkl.size());
+		lkl.removeFirst();
+		System.out.println(lkl);
+		lkl.removeLast();
+		System.out.println(lkl);
+		System.out.println(lkl.getFirst());
+		System.out.println(lkl.getLast());
+		lkl.clear();
+		System.out.println(lkl); 
+		lkl.addFirst("Good");
+		System.out.println(lkl);
+		
+		ArrayList<Object> arlo = new ArrayList<>();   // <> - this wrapper class alias angular classic
+		arlo.add("Hi");
+		arlo.add(9);
+		arlo.add(987654321);
+		arlo.add(66.666);
+		arlo.add('M');
+		System.out.println(arlo);
+		int n=0;
+		for (int i=0; i<arlo.size(); i++) {
+			System.out.println(arlo.get(i));
+			n++;
+		}
+		System.out.println("Total elements in ArrayList is "+n);
 	}
 
 }
