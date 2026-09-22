@@ -54,7 +54,7 @@ public class methodTasks {
 				return;
 			} 
 		}
-			System.out.println("The number is prime");
+			System.out.println("The number "+l+" is prime");
 			return;
 		}	
 	}
@@ -130,7 +130,7 @@ public class methodTasks {
 		mT.squareof(6);
 		mT.factorial(7);
 		mT.oddoreven(134);
-		mT.prime(141);
+		mT.prime(9);
 		mT.palindrome(15951);
 		mT.areaofcircle(5);
 		mT.listofnumbers(10);

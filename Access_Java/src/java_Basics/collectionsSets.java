@@ -76,7 +76,25 @@ public class collectionsSets {
 		System.out.println(ls.getClass());
 		System.out.println(ls.equals(ts));
 		
-		System.out.println("Sets are not supporting - 'set, get, addFirst, addLast, removeFirst, removeLast, indexOf'");
+		System.out.println("Sets are not supporting - 'set, get, addFirst, addLast, removeFirst, removeLast, indexOf, add(index, value)'");
+		
+		Set<Object> s1 = new HashSet<>();
+		s1.add("MN");
+		s1.add("DL");
+		s1.add("MD");
+		s1.add("DM");
+		System.out.println(s1);
+		
+		Set<Object> s2 = new HashSet<>();
+		s2.add("MNSS");
+		s2.add("DLM");
+		s2.add("MN");
+		System.out.println(s2);
+		s1.addAll(s2);
+		System.out.println(s1);
+	//	s1.retainAll(s2);
+		s1.removeAll(s2);
+		System.out.println(s1);
 	}
 	
 }
